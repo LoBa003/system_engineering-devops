@@ -1,1 +1,3 @@
-echo "\"(Ôo)'"
+#!/usr/bin/env bash
+# This script prints a confused smiley
+printf ""(Ôo)'\n"
