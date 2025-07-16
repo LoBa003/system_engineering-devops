@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
-# This script lists files in the current directory, showing only the part after the first dash
+# This script lists non-hidden files, showing the part after the first dash if present
 for file in *; do
-  if [[ "$file" == *-* && "$file" != .* ]]; then
-    echo "${file#*-}"
+  if [[ -f "$file" && "$file" != .* ]]; then
+    if [[ "$file" == *-* ]]; then
+      echo "${file#*-}"
+    else
+      echo "$file"
+    fi
   fi
 done
