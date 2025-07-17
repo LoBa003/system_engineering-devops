@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # This script lists the running processes of the current user
-ps -u $(whoami)
-
+ps -u "$(whoami)" -o pid=
