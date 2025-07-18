@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script to display only bash process PIDs and names
+pgrep -l bash
