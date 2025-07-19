@@ -1,0 +1,4 @@
+#!/bin/bash
+for PID in $(pgrep -f 7-highlander); do
+kill -9 "$PID"
+done
