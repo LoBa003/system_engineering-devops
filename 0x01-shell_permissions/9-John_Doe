@@ -1,0 +1,3 @@
+#!/bin/bash
+# Sets hello file to -rwxr-x-wx permissions
+chmod u=rwx,g=rx,o=wx hello
