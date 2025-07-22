@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 007 hello  # Remove all permissions from owner and group, allow all for others
+chmod 007 hello
